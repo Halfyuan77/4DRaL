@@ -1,1 +1,1 @@
-# 4DRaL: Bridging 4D radar with LiDAR for Place Recognition using  Knowledge Distillation
+# 4DRaL
