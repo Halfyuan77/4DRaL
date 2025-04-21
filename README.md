@@ -12,6 +12,26 @@
    pip install -r requirements.txt
    ```
 
+4. Configure Paths in `config/config.py`
+
+   Edit the following parameters in `config/config.py` to match your system:
+
+   ```
+   data_arg.add_argument('--dataset_path', 
+                        type=str,  
+                        default='/path/to/your/dataset')  # Set to dataset root directory
+   
+   data_arg.add_argument('--checkpoint', 
+                        type=str,  
+                        default='/path/to/pretrained/weights')  # Set to model weights directory
+   
+   data_arg.add_argument('--logPath', 
+                        type=str,  
+                        default='/path/to/log/files')  # Set to log output directory
+   ```
+
+   
+
 ## Evaluation 
 
 1. Evaluating radar-to-radar place recognition (R2R) performance by
