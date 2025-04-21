@@ -7,13 +7,12 @@ import torch.nn as nn
 from tqdm import tqdm
 import torch.optim as optim
 import torch.nn.functional as F
-from os.path import join, exists, isfile
+
 from torch.utils.data import DataLoader, SubsetRandomSampler
 
 from config.config import get_config
-from dataset.ntu4d import EvaluateDataset, TrainingDataset, collate_fn
+from dataset.ntu4d import EvaluateDataset
 from model.resnet18_place import resnet_place_stu
-from other_method.autoplace.autoplace import autoplace
 
 from utils.train_tools import *
 import time
